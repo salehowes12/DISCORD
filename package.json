@@ -1,0 +1,32 @@
+{
+  "name": "discord-clone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple Discord-style real-time chat app built with React, Express, Socket.io, MongoDB, Axios, and pure CSS.",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "vite --host 0.0.0.0 --port 5173 client",
+    "start": "node server/index.js",
+    "build": "vite build client",
+    "preview": "vite preview --host 0.0.0.0 --port 4173 client"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.5.0",
+    "axios": "^1.9.0",
+    "bcryptjs": "^3.0.2",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^7.2.0",
+    "mongoose": "^8.15.1",
+    "nodemon": "^3.1.10",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "vite": "^6.3.5"
+  }
+}
